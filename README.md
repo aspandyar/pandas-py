@@ -22,6 +22,55 @@
 
 3. Download the Stack Overflow Survey data for 2019 from the following URL: [Stack Overflow Survey Data 2019](https://insights.stackoverflow.com/survey). This data is used in the project.
 
+### Setting up Virtual Environment
+
+#### For Windows:
+
+1. First, ensure you have Python installed on your system. If not, download and install Python from [here](https://www.python.org/downloads/).
+
+2. Open PowerShell as an administrator.
+
+3. Run the following command to set the execution policy for the current session:
+
+    ```cmd
+    Set-ExecutionPolicy Unrestricted -Scope Process
+    ```
+
+4. Create a virtual environment by executing:
+
+    ```cmd
+    python -m venv .venv
+    ```
+
+5. Activate the virtual environment by running:
+
+    ```cmd
+    .\.venv\Scripts\activate
+    ```
+
+#### For Linux:
+
+1. First, ensure you have Python installed on your system. Most Linux distributions come with Python pre-installed. If not, you can install it using your package manager. For example, on Ubuntu, you can install Python with:
+
+    ```bash
+    sudo apt update
+    sudo apt install python3 python3-venv
+    ```
+
+2. Navigate to your project directory in the terminal.
+
+3. Create a virtual environment by executing:
+
+    ```bash
+    python3 -m venv .venv
+    ```
+
+4. Activate the virtual environment by running:
+
+    ```bash
+    source .venv/bin/activate
+    ```
+
 ## Usage
 
 1. Launch Jupyter Notebook by running the following command:
